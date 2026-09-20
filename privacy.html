@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy</title>
+<style>
+body{max-width:40rem;margin:0 auto;padding:2rem 1rem;font:16px/1.6 system-ui,sans-serif;color:#222;background:#fff}
+h1{font-size:1.5rem}
+h2{font-size:1.1rem;margin-top:2rem}
+a{color:#0b5fff}
+</style>
+</head>
+<body>
+<h1>Privacy policy</h1>
+<p>Last updated: 20 September 2026</p>
+
+<h2>Scope</h2>
+<p>This policy covers the personal OAuth client used by an installation of
+<a href="https://rclone.org/">rclone</a> on a single Linux machine. The client has
+exactly one user: the owner of the Google Account it connects to.</p>
+
+<h2>What is accessed</h2>
+<p>The client requests the Google Drive scope in order to read, create, modify and
+delete files in the account owner's own Google Drive. This access is used solely to
+present that Drive as a mounted filesystem on the owner's computer.</p>
+
+<h2>What is stored</h2>
+<p>The OAuth refresh token is stored in the rclone configuration file on the owner's
+computer, readable only by the owner's operating system user account. File contents
+are cached on a local disk on that same machine to make reads and writes faster.</p>
+
+<h2>What is shared</h2>
+<p>Nothing. No data is transmitted to any third party, any server operated by the
+author, or any analytics service. Network traffic goes only between the owner's
+computer and Google's own APIs.</p>
+
+<h2>Retention and deletion</h2>
+<p>The local cache can be deleted at any time by removing the cache directory. Access
+can be revoked at any time from the Google Account permissions page at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+which immediately invalidates the stored token.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be sent to the email address registered as the
+support contact on the OAuth consent screen for this client.</p>
+</body>
+</html>
